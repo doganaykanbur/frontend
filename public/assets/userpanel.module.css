@@ -1,0 +1,299 @@
+.container {
+  background-color: #1d3557;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 60px; 
+  overflow: hidden; 
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(90deg, #f6cd4b 0%, #fe9e01 100%);
+  padding: 10px;
+  color: #fff;
+  display: flex;
+  justify-content: space-between; /* Sağ ve sol arasında mesafe */
+  align-items: center; 
+  z-index: 10;
+}
+
+.navbar img {
+  width: 70px;
+  height: 70px;
+  margin-left: 20px;
+}
+
+.navbar h2 {
+  color: #111f33;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 50px;
+  margin: 0;
+  margin-right: 800px; /* Sağdaki margin */
+}
+
+.buttonContainer {
+  display: flex;
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: flex-start; 
+  gap: 100px;
+  height: 100%; 
+  padding-left: 20px; 
+  margin-left: 20px; 
+}
+
+
+.BuildPcButton, .UserBuildsButton {
+  background-color: #fe9e01;
+  padding: 15px 30px; 
+  border: none;
+  border-radius: 5px;
+  font-size: 22px; 
+  color: white;
+  cursor: pointer;
+  width: 100%; 
+  max-width: 300px; 
+  margin: 10 auto; 
+}
+
+.BuildPcButton:hover, .UserBuildsButton:hover {
+  background-color: #111f33;
+}
+
+.userInfo {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  right: 40px; 
+}
+
+.userInfo span {
+  margin-right: 10px;
+  font-size: 30px;
+  color: #1d3557;
+}
+
+.logoutButton {
+  background-color: #1d3557;
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 4px;
+}
+
+.modalContainer {
+  background: linear-gradient(90deg, #f6cd4b 0%, #fe9e01 100%);
+  padding: 30px;
+  border-radius: 10px;
+  width: 400px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+.input {
+  padding: 10px;
+  margin: 10px 0;
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.button {
+  background-color: #1d3557;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  color: white;
+}
+
+.button:hover {
+  background-color: #111f33;
+}
+
+.closeModalButton {
+  background-color: #ff6f61;
+  padding: 10px;
+  margin-top: 15px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+.closeModalButton:hover {
+  background-color: #e55d53;
+}
+
+.partsTable {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.partsTable th, .partsTable td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.partsTable th {
+  background-color: #f4f4f4;
+}
+
+.partsTable tr:hover {
+  background-color: #f1f1f1;
+}
+
+.partsTable input[type="radio"] {
+  margin: 0;
+}
+
+.deleteButton {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 10px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+
+.deleteButton:hover {
+  background-color: darkred;
+}
+
+/* Media Query for Tablet and Mobile */
+@media (max-width: 1024px) {
+  .navbar h2 {
+    font-size: 40px;
+    margin-left: 20px; 
+  }
+
+   .userInfo {
+    
+    margin-top: 20px;
+    margin-left: 10px;
+  }
+
+  .userInfo span {
+    font-size: 24px; /* Yazı boyutunu küçültüyorum */
+  }
+
+  .logoutButton {
+    font-size: 12px; /* Logout butonunu küçültüyorum */
+    padding: 6px 12px;
+  }
+
+  .navbar img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .buttonContainer {
+    gap: 20px; 
+  }
+
+  .addPartButton, .EditPartButton, .BuildPcButton, .UserBuildsButton {
+    font-size: 18px; 
+    padding: 12px 20px; 
+    width: 100%; 
+    max-width: 250px; 
+  }
+
+  
+
+  .modalContainer {
+    width: 90%; 
+    padding: 15px; 
+  }
+
+  .input {
+    font-size: 14px; 
+    padding: 8px; 
+  }
+
+  .button {
+    font-size: 14px; 
+    padding: 8px; 
+  }
+
+  .partsTable td, .partsTable th {
+    font-size: 14px; 
+    padding: 8px; 
+  }
+
+  .deleteButton {
+    padding: 8px;
+  }
+}
+
+/* Media Query for Mobile */
+@media (max-width: 480px) {
+  .navbar h2 {
+    margin-left: 35px;
+    font-size: 20px; 
+  }
+  
+  .navbar img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .buttonContainer {
+    gap: 15px; 
+  }
+
+  .addPartButton, .EditPartButton, .BuildPcButton, .UserBuildsButton {
+    font-size: 16px; 
+    margin-right: 60px;
+    padding: 10px 15px; 
+    width: 100%; 
+  }
+  .userInfo {
+    display: block;
+    margin-left: 0;
+    text-align: center;
+    margin-top: 10px; /* Mobilde daha sıkışık olmasın diye */
+  }
+
+  .userInfo span {
+    font-size: 18px; /* Mobilde yazıyı daha küçük yapıyorum */
+  }
+
+  
+  .modalContainer {
+    width: 95%; 
+  }
+
+  .input {
+    font-size: 12px; 
+    padding: 6px; 
+  }
+
+  .button {
+    font-size: 12px; 
+    padding: 6px; 
+  }
+
+  .partsTable td, .partsTable th {
+    font-size: 12px; 
+    padding: 6px; 
+  }
+
+  .deleteButton {
+    padding: 6px;
+  }
+
+  
+}

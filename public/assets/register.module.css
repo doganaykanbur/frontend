@@ -1,0 +1,168 @@
+.container {
+  background-color: #1d3557;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 60px; 
+  overflow: hidden; 
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(90deg, #f6cd4b 0%, #fe9e01 100%);
+  padding: 10px;
+  color: #fff;
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  z-index: 10;
+}
+
+.navbar img {
+  position: absolute;
+  left: 20px; 
+  width: 70px; 
+  height: 70px;
+}
+
+.navbar h2 {
+  color: #111f33;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 50px;
+  margin: 0;
+}
+
+.formContainer {
+  background: linear-gradient(135deg, rgba(246, 205, 75, 1) 0%, rgba(254, 158, 1, 1) 100%); 
+  border-radius: 15px;
+  padding: 30px;
+  width: 350px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form h1 {
+  color: #111f33;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 20px;
+}
+
+.input {
+  padding: 10px;
+  margin: 10px 0;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.button {
+  background-color: #1d3557;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  color: white;
+}
+
+.button:hover {
+  background-color: #111f33;
+}
+
+.registerLink {
+  margin-top: 15px;
+  color: #1d3557;
+  cursor: pointer;
+}
+
+.registerLink:hover {
+  text-decoration: none;
+}
+
+.registerLink {
+  margin-top: 20px;
+  text-align: center;
+  color: #1d3557;
+}
+
+.registerLink .linkText {
+  color: #1d3557;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.registerLink .linkText:hover {
+  color: #1d3557;
+}
+
+@media (max-width: 768px) {
+  .navbar h2 {
+    font-size: 30px; 
+  }
+
+  .formContainer {
+    width: 90%; 
+    padding: 20px; 
+  }
+
+  .input {
+    font-size: 14px; 
+    padding: 8px; 
+  }
+
+  .button {
+    font-size: 14px; 
+    padding: 8px; 
+  }
+
+  .form h1 {
+    font-size: 24px; 
+    margin-bottom: 10px; 
+  }
+
+  .registerLink {
+    margin-top: 10px; 
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar h2 {
+    font-size: 25px; 
+  }
+
+  .formContainer {
+    width: 95%; 
+    padding: 15px; 
+  }
+
+  .input {
+    font-size: 12px; 
+    padding: 6px; 
+  }
+
+  .button {
+    font-size: 12px; 
+    padding: 6px; 
+  }
+
+  .form h1 {
+    font-size: 20px; 
+    margin-bottom: 8px; 
+  }
+
+  .registerLink {
+    margin-top: 5px; 
+  }
+}

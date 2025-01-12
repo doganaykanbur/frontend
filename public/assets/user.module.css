@@ -1,0 +1,313 @@
+
+
+.container {
+  background-color: #1d3557;
+  height: 100vh;
+  display: flex;
+  margin-top: 50px;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 60px;
+  overflow: hidden;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(90deg, #f6cd4b 0%, #fe9e01 100%);
+  padding: 10px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  height: 80px;
+}
+
+.navbar img {
+  position: absolute;
+  left: 20px;
+  width: 70px;
+  height: 70px;
+}
+
+.navbar h2 {
+  color: #111f33;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 50px;
+  margin: 0;
+}
+
+.userInfo {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  right: 40px;
+}
+
+.userInfo span {
+  margin-right: 10px;
+  font-size: 30px;
+  color: #1d3557;
+}
+
+.logoutButton {
+  background-color: #1d3557;
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 4px;
+}
+
+.boldText {
+  font-size: large;
+  font-weight: bold;
+}
+
+.historyTable th {
+  font-size: large;
+  font-weight: bold;
+}
+
+.selectedBuildContainer h4,
+.selectedBuildContainer h5 {
+  font-size: large;
+  font-weight: bold;
+}
+
+.totalPriceContainer button,
+.buttonStyle,
+.buildButton {
+  font-weight: bold;
+  background: #1d3557;
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 4px;
+}
+
+.buttonStyle:hover {
+  background-color: #fe9e01;
+}
+
+.container h3 {
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgba(254, 158, 1, 1);
+}
+
+.backButton {
+  margin: 20px;
+  font-weight: bold;
+  background: linear-gradient(90deg, #f6cd4b 0%, #fe9e01 100%);
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 4px;
+}
+
+.historyContainer, .selectedBuildContainer {
+  margin-top: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(135deg, rgba(246, 205, 75, 1) 0%, rgba(254, 158, 1, 1) 100%);
+  border-radius: 15px;
+  padding: 20px;
+  width: 500px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.fieldsContainerRow {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: 10px;
+}
+
+.fieldsContainerLeft,
+.fieldsContainerRight {
+  background: linear-gradient(135deg, rgba(246, 205, 75, 1) 0%, rgba(254, 158, 1, 1) 100%);
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.totalPriceContainer button{
+  background: linear-gradient(135deg, rgba(246, 205, 75, 1) 0%, rgba(254, 158, 1, 1) 100%);
+}
+
+.categorySection {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0;
+  width: 100%;
+}
+
+.categoryLabel {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-right: 10px;
+  margin-left: 0;
+  color: #111;
+}
+
+.dropdown {
+  width: 100%;
+  padding: 8px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  margin-top: 10px;
+}
+
+@media (max-width: 1024px) {
+  .navbar h2 {
+    font-size: 35px;
+  }
+
+  .navbar img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .container {
+    padding-top: 30px;
+  }
+
+  .historyContainer, .selectedBuildContainer {
+    width: 80%;
+    padding: 15px;
+  }
+
+  .categoryLabel {
+    font-size: 1.1rem;
+  }
+
+  .dropdown {
+    padding: 10px;
+    font-size: 1.1rem;
+  }
+
+  .userInfo span {
+    font-size: 25px;
+  }
+
+  .backButton {
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+
+  .buildButton {
+    padding: 12px 24px;
+    font-size: 16px;
+  }
+
+  .totalPriceContainer button {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding-top: 20px;
+  }
+
+  .navbar h2 {
+    font-size: 30px;
+  }
+
+  .navbar img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .fieldsContainer, .historyContainer, .selectedBuildContainer {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .categorySection {
+    flex-basis: 100%;
+  }
+
+  .categoryLabel {
+    font-size: 1rem;
+  }
+
+  .dropdown {
+    font-size: 0.9rem;
+  }
+
+  .userInfo {
+    font-size: 20px;
+  }
+
+  .buildButton {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar h2 {
+    margin-left: 70px;
+    font-size: 24px;
+  }
+  .userInfo {
+
+    position: static;
+    display: inline-block;
+    margin-left: 2opx;
+    margin-top: 20px;
+  }
+
+  .navbar img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .historyContainer, .selectedBuildContainer {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .categoryLabel {
+    font-size: 0.9rem;
+  }
+
+  .dropdown {
+    font-size: 0.8rem;
+  }
+
+  .userInfo {
+    font-size: 16px;
+  }
+
+  .buildButton {
+    padding: 5px 10px;
+    font-size: 10px;
+  }
+
+  .backButton {
+    padding: 5px 10px;
+    font-size: 12px;
+  }
+
+  .totalPriceContainer button {
+    padding: 5px 10px;
+    font-size: 12px;
+  }
+}

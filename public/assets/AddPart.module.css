@@ -1,0 +1,133 @@
+.container {
+  position: absolute; /* Ekranın tamamını kaplayacak */
+  top: 50%; /* Yatayda ortalamak için */
+  left: 50%; /* Dikeyde ortalamak için */
+  transform: translate(-50%, -50%); /* Gerçek ortalamayı sağlamak için */
+  padding: 30px;
+  margin-top: 20px;
+  width: 100%;
+  max-width: 550px;
+  height: auto;
+  justify-items: center;
+  align-items: center;
+  border-radius: 12px;
+  background: linear-gradient(90deg, #f6cd4b 0%, #fe9e01 100%);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  color: #111f33;
+  font-family: 'Arial', sans-serif;
+}
+
+
+
+.title {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.select {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+.form {
+  margin-top: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+.button {
+  background-color: #111f33;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #0e1628;
+}
+
+.response-message {
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 6px;
+  background-color: #fffbe6;
+  color: #333;
+  text-align: center;
+  font-size: 16px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    padding: 20px;
+    margin-top: 10px;
+    width: 90%;
+  }
+
+  .title {
+    font-size: 20px;
+  }
+
+  .select, .input {
+    padding: 8px;
+  }
+
+  .button {
+    padding: 10px 18px;
+    font-size: 14px;
+  }
+
+  .response-message {
+    font-size: 14px;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .container {
+    padding: 15px;
+    margin-top: 250px;
+    width: 60%;
+  }
+
+  .title {
+    font-size: 18px;
+  }
+
+  .button {
+    padding: 8px 16px;
+    font-size: 12px;
+  }
+
+  .response-message {
+    font-size: 12px;
+  }
+}

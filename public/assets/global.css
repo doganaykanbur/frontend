@@ -1,0 +1,25 @@
+body {
+  user-select: none;
+  margin: 0;
+  padding: 0;
+  background-color: #f6cd4b; /* Arka plan rengi */
+  color: #111f33; /* Yazı rengi */
+}
+
+/* Media Queries for Tablet (max-width: 768px) */
+@media (max-width: 768px) {
+  body {
+    padding: 10px; /* Tablet için padding değişebilir */
+    background-color: #fe9e01; /* Tablet için farklı arka plan rengi */
+    color: #ffffff; /* Tablet için yazı rengi */
+  }
+}
+
+/* Media Queries for Mobile (max-width: 480px) */
+@media (max-width: 480px) {
+  body {
+    padding: 5px; /* Mobil için padding daha küçük olabilir */
+    background-color: #1d3557; /* Mobil için farklı arka plan rengi */
+    color: #ffffff; /* Mobil için yazı rengi */
+  }
+}

@@ -1,0 +1,7 @@
+POST https://backend-s1x4.onrender.com/api/auth/local
+Content-Type: application/json
+
+{
+  "identifier": "admin53@gmail.com",  
+  "password": "dogi53"                 
+}
