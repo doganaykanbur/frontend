@@ -4,7 +4,7 @@ import UpdatePriceModal from './UpdatePriceModal';
 
 import styles from '../public/assets/admin.module.css';
 import { useRouter } from 'next/router';  // Router'ı doğru şekilde import edin
-import { auth } from '../../my-firebase-app/src/firebase';  // Firebase Auth importu
+import { auth } from '../src/utils/firebase';  // Firebase Auth importu
 import { signOut } from 'firebase/auth';  // Firebase signOut fonksiyonu
 import { useUser } from '../src/utils/UserContext';  // Kullanıcı Context'i
 

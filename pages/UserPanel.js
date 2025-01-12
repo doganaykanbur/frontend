@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import UpdatePriceModal from './UpdatePriceModal';
 import styles from '../public/assets/userpanel.module.css';
 import { useRouter } from 'next/router';
-import { auth } from '../../my-firebase-app/src/firebase';  // Firebase Auth importu
+import { auth } from '../src/utils/firebase';  // Firebase Auth importu
 import { signOut } from 'firebase/auth';  // Firebase signOut fonksiyonu
 import { useUser } from '../src/utils/UserContext';  // Kullanıcı Context'i
 

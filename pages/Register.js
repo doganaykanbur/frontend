@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useRouter } from 'next/router';
-import { auth } from '../../my-firebase-app/src/firebase';  // Firebase auth import
+import { auth } from '../src/utils/firebase';  // Firebase auth import
 import { createUserWithEmailAndPassword } from 'firebase/auth';  // Firebase createUser fonksiyonu
 import styles from '../public/assets/register.module.css';
 
