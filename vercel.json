@@ -1,0 +1,23 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@vercel/node"
+    },
+    {
+      "src": "pages/**/*.{js,jsx,ts,tsx}",
+      "use": "@vercel/static-build"
+    }
+  ],
+  "env": {
+    "NEXT_PUBLIC_FIREBASE_API_KEY": "AIzaSyA5LY_LnyVwDUE-G90FGuSbW18VCLTB3WQ",
+    "NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN": "pc-part-picker-f2e9e.firebaseapp.com",
+    "NEXT_PUBLIC_FIREBASE_PROJECT_ID": "pc-part-picker-f2e9e",
+    "NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET": "pc-part-picker-f2e9e.firebasestorage.app",
+    "NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID": "1007102313170",
+    "NEXT_PUBLIC_FIREBASE_APP_ID": "1:1007102313170:web:5b0bd826b26002e109e30b",
+    "NEXT_PUBLIC_FIREBASE_MEASUREMENT_ID": "G-WKVK9PLXY8"
+  },
+  "alias": "your-app-name"
+}
